@@ -39,15 +39,15 @@ class BookShelf
      */
     public function search($conditions)
     {
-        $candidates = [];
+        $hits = [];
 
         foreach ($this->books as $book) {
             if ($book->matches($conditions)) {
-                $candidates[] = $book;
+                $hits[] = $book;
             }
         }
         
-        return $candidates;
+        return $hits;
     }
 
 }
