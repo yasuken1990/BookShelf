@@ -64,7 +64,7 @@ class Book
      */
     public function matches($condition)
     {
-        if (isset($condition['isbn']) && $this->isbn === $condition['isbn']) {
+        if (isset($condition['isbn']) && preg_replace('/[^0-9]/', '', $this->isbn) === preg_replace('/[^0-9]/', '', $condition['isbn'])) {
             return true;
         }
 
