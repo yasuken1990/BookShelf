@@ -12,7 +12,7 @@ $faker->addProvider(new \App\BookFaker($faker));
 for ($i=0; $i<BOOKS_NUMBER; $i++) {
 
     $book = new \App\Book();
-    $book->setIsbn($faker->isbn13);
+    $book->setIsbn($faker->isbnStr);
     $book->setTitle($faker->title);
     $book->setAuthor($faker->name);
 
