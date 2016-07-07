@@ -1,0 +1,20 @@
+{
+    "name": "moremost/bookshelf",
+    "description": "Sample project for in-house workshop.",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yuya Sato",
+            "email": "sato@moremost.jp"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "fzaninotto/faker": "^1.6"
+    }
+}
