@@ -1,7 +1,7 @@
 {
     "name": "sato0408/bookshelf",
     "description": "Sample project for in-house workshop.",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "license": "MIT",
     "type": "project",
     "authors": [
