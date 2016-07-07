@@ -56,4 +56,27 @@ class Book
         $this->author = $author;
     }
 
+    /**
+     * 与えられた条件に一致するかどうかを返す
+     *
+     * @param array $condition
+     * @return bool
+     */
+    public function matches($condition)
+    {
+        if (isset($condition['isbn']) && $this->isbn === $condition['isbn']) {
+            return true;
+        }
+
+        if (isset($condition['title']) && strpos($this->title, $condition['title']) !== false) {
+            return true;
+        }
+
+        if (isset($condition['author']) && strpos($this->author, $condition['author']) !== false) {
+            return true;
+        }
+
+        return false;
+    }
+
 }

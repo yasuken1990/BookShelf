@@ -1,5 +1,7 @@
 <?php
 
+require_once 'vendor/autoload.php';
+
 define('BOOKS_NUMBER', 100);
 
 $shelf = new \App\BookShelf();
@@ -28,17 +30,17 @@ $shelf->add($book);
 $book1 = $shelf->search(['isbn' => 'ISBN000-0-0000-0000-0']);
 var_dump($book1);
 
-echo PHP_EOL . '=====' . PHP_EOL;
+echo PHP_EOL . '=====' . PHP_EOL . PHP_EOL;
 
 $book2 = $shelf->search(['title' => 'PHPによるオブジェクト指向']);
 var_dump($book2);
 
-echo PHP_EOL . '=====' . PHP_EOL;
+echo PHP_EOL . '=====' . PHP_EOL . PHP_EOL;
 
 $book3 = $shelf->search(['author' => '佐藤']);
 var_dump($book3);
 
-echo PHP_EOL . '=====' . PHP_EOL;
+echo PHP_EOL . '=====' . PHP_EOL . PHP_EOL;
 
-$book4 = $shelf->search(['title' => 'プログラミング', 'author' => '佐藤']);
+$book4 = $shelf->search(['title' => 'PHPプログラミング', 'author' => '佐藤']);
 var_dump($book4);

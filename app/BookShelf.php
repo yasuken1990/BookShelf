@@ -39,7 +39,15 @@ class BookShelf
      */
     public function search($conditions)
     {
-        // 実装してください。
+        $candidates = [];
+
+        foreach ($this->books as $book) {
+            if ($book->matches($conditions)) {
+                $candidates[] = $book;
+            }
+        }
+        
+        return $candidates;
     }
 
 }
