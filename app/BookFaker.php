@@ -15,4 +15,8 @@ class BookFaker extends Base
         return $language[array_rand($language)] . $purpose[array_rand($purpose)] . $suffix[array_rand($suffix)];
     }
 
+    public function isbnStr()
+    {
+        return preg_replace('/^(\d{3})(\d)(\d{4})(\d{4})(\d)$/', 'ISBN$1-$2-$3-$4-$5', $this->generator->isbn13());
+    }
 }
