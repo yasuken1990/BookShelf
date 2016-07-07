@@ -1,5 +1,7 @@
 <?php
 
+require_once 'vendor/autoload.php';
+
 define('BOOKS_NUMBER', 100);
 
 $shelf = new \App\BookShelf();
@@ -40,5 +42,5 @@ var_dump($book3);
 
 echo PHP_EOL . '=====' . PHP_EOL;
 
-$book4 = $shelf->search(['title' => 'プログラミング', 'author' => '佐藤']);
+$book4 = $shelf->search(['title' => 'PHPプログラミング', 'author' => '佐藤']);
 var_dump($book4);
