@@ -3,7 +3,9 @@
 namespace App;
 
 
-class Book
+use App\Contracts\Searchable;
+
+class Book implements Searchable
 {
     /**
      * ISBN
