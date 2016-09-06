@@ -31,15 +31,4 @@ class BookShelf
         $this->books[] = $book;
     }
 
-    /**
-     * 本棚を検索し、条件に一致するBookの配列を返す
-     *
-     * @param array $conditions
-     * @return array
-     */
-    public function search($conditions)
-    {
-        // 実装してください。
-    }
-
 }
