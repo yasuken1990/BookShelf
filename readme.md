@@ -3,7 +3,7 @@
 要件を追加しながら勉強していこうと思います。
 
 ## 今回の課題
-run.phpを実行した際に、MoreBookShelfのBookデータをデータベースに、PetBookShelfのBookデータはCSVファイルに保存されるように、コードを追加してください。
+run.phpを実行した際に、MoreBookShelfのBook標準出力に、PetBookShelfのBookデータはCSVファイルに保存されるように、コードを追加してください。
 
 ### 注意事項
 app ディレクトリ以外のファイルは変更してはいけません。app ディレクトリ内ならファイルの変更、追加・削除は自由です。
