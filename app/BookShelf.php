@@ -12,6 +12,8 @@ class BookShelf
      */
     private $books;
 
+    private $savePath;
+
     /**
      * コンストラクタ
      *
@@ -19,6 +21,7 @@ class BookShelf
     public function __construct()
     {
         $this->books = [];
+        $this->savePath = './data/';
     }
 
     /**
@@ -34,7 +37,7 @@ class BookShelf
     {
 	if ($type === null) {
             $this->dispBook();
-        }
+        } else {
             $export = $type;
             $this->$export();
 	}
